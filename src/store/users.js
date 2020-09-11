@@ -1,0 +1,17 @@
+module.exports=[
+	{id:1,phone:"1234567890",name:"hitesh",email:"hitesh@gmail.com"},
+	{id:2,phone:"2234567890",name:"shirsat",email:"shirsat@gmail.com"},
+	{id:3,phone:"3234567890",name:"lalit",email:"lalit@gmail.com"},
+	{id:4,phone:"4234567890",name:"narendar",email:"narendar@gmail.com"},
+	{id:5,phone:"6234567890",name:"shyam",email:"shyam@gmail.com"},
+	{id:6,phone:"7234567890",name:"venky",email:"venky@gmail.com"},
+	{id:7,phone:"8234567890",name:"amit",email:"amit@gmail.com"},
+	{id:8,phone:"9234567890",name:"sumit",email:"sumit@gmail.com"},
+	{id:9,phone:"9934567890",name:"punit",email:"punit@gmail.com"},
+	{id:10,phone:"8834567890",name:"priya",email:"priya@gmail.com"},
+	{id:11,phone:"7734567890",name:"priyanka",email:"priyanka@gmail.com"},
+	{id:12,phone:"6634567890",name:"supriya",email:"supriya@gmail.com"},
+	{id:13,phone:"5534567890",name:"sandhya",email:"sandhya@gmail.com"},
+	{id:14,phone:"3334567890",name:"vivek",email:"vivek@gmail.com"},
+	{id:15,phone:"2234567890",name:"manvendra",email:"manvendra@gmail.com"}
+]

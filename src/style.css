@@ -1,0 +1,296 @@
+body
+{
+	background:slateblue;
+	margin:0;
+	font-family: verdana;
+}
+
+*
+{
+	text-decoration: none;
+	border:0;
+	outline:0;
+}
+.header
+{
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header>div
+{
+	padding: 2%;
+}
+
+a
+{
+	color:white;
+}
+
+.header .search
+{
+	padding: 10px;
+	background: white;
+	color:black;
+	display: flex;
+	border-radius: 100px;
+}
+.header .search input
+{
+	margin-left: 2%;
+}
+.header .dropdown
+{
+	position: relative;
+	padding: 10px;
+}
+.header .dropdown-list
+{
+	position: absolute;
+	height: 40vh;
+	overflow: auto;
+}
+.header .select
+{
+	background: white;
+	color:black;
+	padding: 10px 20px;
+	border-radius: 100px;
+}
+.header .dropdown-list .option
+{
+	padding: 10px 20px;
+	background: white;
+	color:black;
+	border-radius: 100px;
+}
+
+.header .dropdown-list .option.active
+{
+	background: black;
+	color:white;
+}
+.footer
+{
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+	background:#333;
+	color:white;
+	text-align: center;
+}
+
+.container
+{
+	height: 80vh;
+	overflow: auto;
+}
+.container::-webkit-scrollbar
+{
+	width: 10px;
+	background: black;
+}
+.container::-webkit-scrollbar-thumb
+{
+	background: tomato;
+}
+
+.container .list-group
+{
+	padding: 10px;
+	display: flex;
+	flex-flow: column-reverse;
+}
+.container .list-group .list-group-item
+{
+	background: #333;
+	display: flex;
+	color:white;
+	margin:10px;
+	padding:10px 30px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 100px;
+}
+.container .list-group .list-group-item a,
+.container .list-group .list-group-item button
+{
+	padding: 10px;
+	margin:4px;
+}
+.container .list-group .list-group-item:hover
+{
+	background: white;
+	color:black;
+}
+.container .list-group .list-group-item:hover a,
+.container .list-group .list-group-item:hover button
+{
+	background: black;
+	color:white;
+}
+
+
+.modal
+{
+	position: fixed;
+	top:50%;
+	left:50%;
+	padding: 5%;
+	transform: translate(-50%,-50%) scale(0);
+	background: rgba(255,255,255,1);
+	color:black;
+	box-shadow:0 0 10px black;
+	transition: 0.3s;
+	z-index: 1000;
+}
+.modal.active
+{
+	transform: translate(-50%,-50%)  scale(1);
+}
+
+.footer.active,
+.header.active,
+.container.active
+{
+	opacity: 0.5;
+	transition: 0.8s;
+}
+
+
+.modal .close
+{
+	position: absolute;
+	top:0;
+	right:0;
+	padding: 10px;
+	background: tomato;
+	color:white;
+}
+
+.editable1
+{
+	border-bottom: 1px solid black;
+}
+
+.btn
+{
+	padding:10px;
+	background: black;
+	color:white;
+}
+
+
+.popup
+{
+	position: fixed;
+	top:50%;
+	left:50%;
+	padding: 5%;
+	transform: translate(-50%,-50%) scale(0);
+	background: rgba(255,255,255,1);
+	color:black;
+	box-shadow:0 0 10px black;
+	transition: 0.3s;
+	z-index: 10001;
+}
+.popup.active
+{
+
+	transform: translate(-50%,-50%)  scale(1);
+}
+
+.popup .close
+{
+	position: absolute;
+	top:0;
+	right:0;
+	padding: 10px;
+	background: tomato;
+	color:white;
+}
+
+
+.chat 
+{
+	margin:20px;
+	padding:5px;
+	background: black;
+	height: 70vh;
+	overflow: auto;
+}
+.chat  .line
+{
+	padding: 10px;
+	margin:10px;
+	border:2px solid white;
+}
+
+
+.chat .flex1
+{
+	display: flex;
+	justify-content: space-between;
+}
+.chat .flex1 .left,
+.chat .flex1 .right
+{
+	width:50%;
+	padding: 2%;
+	display: flex;
+	flex-flow: column;
+}
+.chat .flex1  .message
+{
+	padding: 10px;
+	border-radius: 100px;
+	margin:10px;
+}
+.chat .recieved .message
+{
+	background: yellow;
+	color:black;
+}
+.chat .sent .message
+{
+	background: orange;
+	color:white;
+}
+.chat .title
+{
+	padding: 10px;
+	text-align: center;
+	background:linear-gradient(90deg,yellow,orange,red);
+	color:white;
+	border-radius: 100px;
+
+}
+
+.chat .send
+{
+	text-align: center;
+	padding: 10px;
+	background: black;
+	color:white;
+	display: flex;
+}
+.chat .send input,
+.chat .send button
+{
+	padding: 10px;
+	background: black;
+	color:white;	
+}
+.chat .send button
+{
+	margin-left: 10px;
+	background: green;
+	color:white;
+	border-radius: 100px;
+	width:50px;
+}
+.chat .send input
+{
+	width:100%;
+}
